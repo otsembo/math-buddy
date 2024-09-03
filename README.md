@@ -50,8 +50,8 @@ If not installed, download and install Node.js from [here](https://nodejs.org/).
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/react-math-router-app.git
-   cd react-math-router-app
+   git clone https://github.com/otsembo/math-buddy.git
+   cd math-buddy
    ```
 
 2. **Install dependencies**:
@@ -80,10 +80,7 @@ If not installed, download and install Node.js from [here](https://nodejs.org/).
 
 The app uses the following path structure for routing:
 
-- `/addition`: Navigate to the addition form.
-- `/subtraction`: Navigate to the subtraction form.
-- `/multiplication`: Navigate to the multiplication form.
-- `/:operation/:num1/:num2`: Display the result of the operation.
+
 
 You can also manually enter a URL to see the result for different numbers.
 
@@ -117,11 +114,11 @@ Here are some screenshots of the application:
 
 ### 1. **Home Page (Addition Form)**
 
-![Addition Form Screenshot](https://via.placeholder.com/600x400.png?text=Addition+Form)
+![Addition Form Screenshot](./addition.png)
 
 ### 2. **Result Page**
 
-![Result Page Screenshot](https://via.placeholder.com/600x400.png?text=Result+Page)
+![Result Page Screenshot](./result.png)
 
 ## 🚀 Future Enhancements
 
