@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+# 🧮 React Math Router App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React application to practice routing using `react-router-dom`. The app features a sidebar with three mathematical operations: **Addition**, **Subtraction**, and **Multiplication**. Users can input two numbers and perform calculations, with results dynamically shown based on URL path parameters.
 
-## Available Scripts
+## 📋 Table of Contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Screenshots](#screenshots)
+- [Future Enhancements](#future-enhancements)
+- [License](#license)
 
-### `npm start`
+## 📖 Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The React Math Router App is designed to help developers practice routing in React using `react-router-dom`. The app allows users to perform basic mathematical operations by navigating to different routes that include the operation type and the numbers involved in the calculation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+- **Dynamic Routing**: Uses path parameters to perform operations and display results.
+- **Sidebar Navigation**: Easy navigation between different operations.
+- **Interactive Form**: Users can input numbers and see results immediately after submitting the form.
+- **Error Handling**: Basic handling for invalid routes.
+- **Responsive Design**: Simple and responsive design for a better user experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Technologies
 
-### `npm run build`
+- **React**: Front-end library for building user interfaces.
+- **React Router DOM**: Routing library for React.
+- **JavaScript**: Programming language used for logic and functionality.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ensure you have Node.js and npm installed. You can verify this by running:
 
-### `npm run eject`
+```bash
+node -v
+npm -v
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+If not installed, download and install Node.js from [here](https://nodejs.org/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repository**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   git clone https://github.com/your-username/react-math-router-app.git
+   cd react-math-router-app
+   ```
 
-## Learn More
+2. **Install dependencies**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Run the app**:
 
-### Code Splitting
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   This will start the app on `http://localhost:3000`.
 
-### Analyzing the Bundle Size
+## 🎮 Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Navigating the App
 
-### Making a Progressive Web App
+- **Sidebar**: Click on any operation (Addition, Subtraction, Multiplication) to start.
+- **Input Form**: Enter two numbers and click "Calculate".
+- **Result**: The result will be displayed along with the updated URL reflecting the operation and numbers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### URL Paths
 
-### Advanced Configuration
+The app uses the following path structure for routing:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- `/addition`: Navigate to the addition form.
+- `/subtraction`: Navigate to the subtraction form.
+- `/multiplication`: Navigate to the multiplication form.
+- `/:operation/:num1/:num2`: Display the result of the operation.
 
-### Deployment
+You can also manually enter a URL to see the result for different numbers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Example URLs
 
-### `npm run build` fails to minify
+- **Addition**: `/addition/5/3`
+- **Subtraction**: `/subtraction/10/4`
+- **Multiplication**: `/multiplication/7/6`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📂 Folder Structure
+
+```plaintext
+react-math-router-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Sidebar.js
+│   │   ├── OperationForm.js
+│   │   └── Result.js
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── package.json
+├── README.md
+└── yarn.lock
+```
+
+## 📸 Screenshots
+
+Here are some screenshots of the application:
+
+### 1. **Home Page (Addition Form)**
+
+![Addition Form Screenshot](./addition.png)
+
+### 2. **Result Page**
+
+![Result Page Screenshot](./result.png)
+
+## 🚀 Future Enhancements
+
+- **Division Operation**: Add a division operation with error handling for division by zero.
+- **Input Validation**: Improve validation for edge cases (e.g., negative numbers).
+- **User Authentication**: Add user login and history tracking for personalized experience.
+- **Styling**: Incorporate CSS frameworks like Tailwind CSS or Bootstrap for improved UI.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
