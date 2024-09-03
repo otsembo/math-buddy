@@ -2,8 +2,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
-import OperationForm from './components/OperationForm';
-import Result from './components/Result';
 
 const App = () => {
   return (
@@ -12,10 +10,12 @@ const App = () => {
         <Sidebar />
         <div style={styles.contentContainer}>
           <Routes>
-            <Route path="/" element={<Navigate to="/addition" />} />
-            <Route path="/:operation" element={<OperationForm />} />
-            <Route path="/:operation/:num1/:num2" element={<Result />} />
-            <Route path="*" element={<h2>404: Page Not Found</h2>} />
+
+            {/* TODO 1: Add a new route to open the operation form */}
+            {/* TODO 2: Add a new route that opens the Result page */}
+            {/* TODO BONUS 1: Add a new route to  make the homepage default to navigating to the addition operation form  */}
+            {/* TODO BONUS 2: Add a custom Page Not Found error */}
+
           </Routes>
         </div>
       </div>

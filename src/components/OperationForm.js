@@ -4,9 +4,9 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 const OperationForm = () => {
   const navigate = useNavigate();
-  const { operation, num1: paramNum1, num2: paramNum2 } = useParams();
-  const [num1, setNum1] = useState(paramNum1 || '');
-  const [num2, setNum2] = useState(paramNum2 || '');
+  const { operation, n1, n2 } = useParams();
+  const [num1, setNum1] = useState(n1 || '');
+  const [num2, setNum2] = useState(n2 || '');
 
   const handleSubmit = (e) => {
     e.preventDefault();
