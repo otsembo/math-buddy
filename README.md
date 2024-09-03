@@ -50,8 +50,8 @@ If not installed, download and install Node.js from [here](https://nodejs.org/).
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/react-math-router-app.git
-   cd react-math-router-app
+   git clone https://github.com/otsembo/math-buddy.git
+   cd math-buddy
    ```
 
 2. **Install dependencies**:
